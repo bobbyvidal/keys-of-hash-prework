@@ -2,6 +2,10 @@ class Hash
   def keys_of(arguments)
     array = []
     self.each do |keys, values|
-      if ar
+      if arguments.include?(value)
+        array << value 
+      end
+    end
+    array
   end
 end
